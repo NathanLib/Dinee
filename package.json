@@ -1,0 +1,19 @@
+{
+  "name": "dinee",
+  "version": "1.0.0",
+  "description": "CM3119 - Coursework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanLib/Dinee.git"
+  },
+  "author": "Nathan <nathan.lib19@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanLib/Dinee/issues"
+  },
+  "homepage": "https://github.com/NathanLib/Dinee#readme"
+}

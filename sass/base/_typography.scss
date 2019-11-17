@@ -1,0 +1,27 @@
+body {
+    font-family: 'Candara', sans-serif;
+    color: $colour-primary;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+h1 {
+    font-family: 'Candara', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    font-style: italic;
+}
+
+textarea {
+    font-family: 'Candara', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+button {
+    font-family: 'Candara', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}
