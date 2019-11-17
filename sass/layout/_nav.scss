@@ -1,24 +1,49 @@
-.nav {
-    padding-right: $layout-margin;
-    flex: 2 1 auto;
-    text-align: right;
-    &__link {
-        display: inline;
-        font-size: 3rem;
-        padding-left: 1.5rem;
-        & a{
+.navbar {
+    padding: 0 1rem !important;
+    &-light {
+        background-color: $colour-primary !important;
+    }
+    &-brand {
+        color: $colour-white !important;
+        font-size: 2.25rem !important;
+        letter-spacing: 0.2rem;
+    }
+    &-collapse {
+        justify-content: flex-end;
+    }
+    &__search {
+        @include border;
+        color: $colour-darkgray;
+        background-color: $colour-white;
+        display: flex;
+        align-items: center;
+        padding-right: 0.75rem;
+        height: 2.25rem;
+        width: 75%;
+
+        & span {
+            padding: 0 0.75rem;
+        }
+
+        & input {
+            height: 2.25rem;
+            width: 100%;
+            border: 0;
+
+            border-radius: $border-radius;
+        }
+    }
+    & a {
         text-decoration: none;
-        color: $colour-accent;
+        color: $colour-darkgray;
+        & span {
+            padding: 0 0.75rem;
         }
-        &--active {
-            color: $colour-secondary;
-            &:hover{
-                cursor:default;
-                color: $colour-secondary;
-            }
-        }
-        & a:hover{
-            color: $colour-white;
-        }
+    }
+    &__login {
+        @include navbar__elements;
+    }
+    &__addRecipe {
+        @include navbar__elements;
     }
 }

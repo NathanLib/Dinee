@@ -1,27 +1,23 @@
 body {
-    font-family: 'Candara', sans-serif;
+    font-family: "Rosario", sans-serif;
     color: $colour-primary;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.7;
+    font-size: 1rem;
 }
 
 h1 {
-    font-family: 'Candara', sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
-    font-style: italic;
+    font-family: "Rosario", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 textarea {
-    font-family: 'Candara', sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
 }
 
 button {
-    font-family: 'Candara', sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 2.75rem;
+    font-family: "Rosario", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
 }

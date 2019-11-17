@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Rosario", sans-serif;
+  color: #3bccaa;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Rosario", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Rosario", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  padding: 0 1rem !important;
+}
+.navbar-light {
+  background-color: #3bccaa !important;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 2.25rem !important;
+  letter-spacing: 0.2rem;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar__search {
+  border: solid thin #333333;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  height: 2.25rem;
+  width: 75%;
+}
+.navbar__search span {
+  padding: 0 0.75rem;
+}
+.navbar__search input {
+  height: 2.25rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.35rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333333;
+}
+.navbar a span {
+  padding: 0 0.75rem;
+}
+.navbar__login {
+  border: solid thin #333333;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  height: 2.25rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.navbar__login:hover {
+  background-color: #333333;
+}
+.navbar__login:hover a {
+  color: #fff;
+}
+.navbar__addRecipe {
+  border: solid thin #333333;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  height: 2.25rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.navbar__addRecipe:hover {
+  background-color: #333333;
+}
+.navbar__addRecipe:hover a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
