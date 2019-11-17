@@ -1,0 +1,37 @@
+.form--username {
+    @include form-input;
+}
+
+.form--password {
+    @include form-input;
+}
+
+.form--confirmPassword {
+    @include form-input;
+}
+
+.form--email {
+    @include form-input;
+}
+
+.form--btn {
+    background-color: $colour-secondary;
+    display: flex;
+    padding: 0.25rem 0.75rem;
+    @include border($colour-secondary);
+
+    & a {
+        color: $colour-white;
+        font-size: 1.25rem;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
+    &:hover {
+        box-shadow: $shadow;
+        background-color: $colour-white;
+    }
+    &:hover a {
+        color: $colour-secondary;
+    }
+}

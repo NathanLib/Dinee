@@ -1,5 +1,5 @@
-@mixin border {
-    border: solid thin $colour-darkgray;
+@mixin border($colour: $colour-darkgray) {
+    border: solid thin $colour;
     border-radius: $border-radius;
 }
 
@@ -11,8 +11,8 @@
     align-items: center;
     padding-right: 0.75rem;
     height: 2.25rem;
-    margin-left: 1rem;
     cursor: pointer;
+    margin: 0.5rem 0;
 
     &:hover {
         background-color: $colour-darkgray;
@@ -20,5 +20,36 @@
         a {
             color: $colour-white;
         }
+    }
+
+    @media (min-width: 768px) {
+        margin-left: 1rem;
+    }
+}
+
+@mixin form-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin form-input {
+    @include border($colour-secondary);
+    color: $colour-darkgray;
+    background-color: $colour-white;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    height: 1rem;
+    margin: 0.75rem 0;
+
+    // & span {
+    //     color: $colour-secondary;
+    // }
+    & input {
+        height: 2.25rem;
+        border: 0;
+        padding-left: 0.75rem;
     }
 }

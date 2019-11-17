@@ -8,7 +8,7 @@
 
 body {
   font-family: "Rosario", sans-serif;
-  color: #3bccaa;
+  color: #333333;
   font-size: 1rem;
 }
 
@@ -28,6 +28,16 @@ button {
 
 p {
   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .navbar {
@@ -53,7 +63,11 @@ p {
   align-items: center;
   padding-right: 0.75rem;
   height: 2.25rem;
-  width: 75%;
+}
+@media (min-width: 1200px) {
+  .navbar__search {
+    width: 70%;
+  }
 }
 .navbar__search span {
   padding: 0 0.75rem;
@@ -80,14 +94,19 @@ p {
   align-items: center;
   padding-right: 0.75rem;
   height: 2.25rem;
-  margin-left: 1rem;
   cursor: pointer;
+  margin: 0.5rem 0;
 }
 .navbar__login:hover {
   background-color: #333333;
 }
 .navbar__login:hover a {
   color: #fff;
+}
+@media (min-width: 768px) {
+  .navbar__login {
+    margin-left: 1rem;
+  }
 }
 .navbar__addRecipe {
   border: solid thin #333333;
@@ -98,14 +117,162 @@ p {
   align-items: center;
   padding-right: 0.75rem;
   height: 2.25rem;
-  margin-left: 1rem;
   cursor: pointer;
+  margin: 0.5rem 0;
 }
 .navbar__addRecipe:hover {
   background-color: #333333;
 }
 .navbar__addRecipe:hover a {
   color: #fff;
+}
+@media (min-width: 768px) {
+  .navbar__addRecipe {
+    margin-left: 1rem;
+  }
+}
+
+.form--username {
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  height: 1rem;
+  margin: 0.75rem 0;
+}
+.form--username input {
+  height: 2.25rem;
+  border: 0;
+  padding-left: 0.75rem;
+}
+
+.form--password {
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  height: 1rem;
+  margin: 0.75rem 0;
+}
+.form--password input {
+  height: 2.25rem;
+  border: 0;
+  padding-left: 0.75rem;
+}
+
+.form--confirmPassword {
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  height: 1rem;
+  margin: 0.75rem 0;
+}
+.form--confirmPassword input {
+  height: 2.25rem;
+  border: 0;
+  padding-left: 0.75rem;
+}
+
+.form--email {
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  height: 1rem;
+  margin: 0.75rem 0;
+}
+.form--email input {
+  height: 2.25rem;
+  border: 0;
+  padding-left: 0.75rem;
+}
+
+.form--btn {
+  background-color: #f48574;
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+}
+.form--btn a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.form--btn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+}
+.form--btn:hover a {
+  color: #f48574;
+}
+
+body.log {
+  background-color: #f48574;
+}
+
+.containerLog {
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  border: solid thin #fff;
+  border-radius: 0.35rem;
+}
+.containerLog__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerLog__heading h4 {
+  display: flex;
+  align-items: end;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.containerLog__heading h4 span {
+  color: #f48574;
+  padding-left: 0.25rem;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+.containerLog__heading h4 img {
+  padding: 0 0.35rem;
+}
+.containerLog__heading hr {
+  width: 100%;
+}
+.containerLog__footing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerLog__footing h5 a {
+  color: #f48574;
+  padding-left: 0.25rem;
+  letter-spacing: normal;
+}
+.containerLog__footing h5 span {
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.containerLog__footing hr {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
