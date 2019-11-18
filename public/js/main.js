@@ -23,11 +23,10 @@ function log_form_center() {
     $('.containerLog').center();
 }
 
-addEvent(window, "load", log_form_center);
 addEvent(window, "resize", log_form_center);
 
 // *****************************************
 
 $(document).ready(function () {
-
+    window.onload(log_form_center());
 });
