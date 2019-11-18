@@ -1,0 +1,57 @@
+#navbar-addRecipe {
+    &.navbar {
+        padding: 0 1rem !important;
+        &-light {
+            background-color: $colour-secondary !important;
+        }
+        &-brand {
+            color: $colour-white !important;
+            font-size: 2.25rem !important;
+            letter-spacing: 0.2rem;
+        }
+        &-collapse {
+            justify-content: flex-end;
+        }
+
+        & .navbar {
+            &__search {
+                @include border;
+                color: $colour-darkgray;
+                background-color: $colour-white;
+                display: flex;
+                align-items: center;
+                padding-right: 0.75rem;
+                height: 2.25rem;
+
+                @media (min-width: 1200px) {
+                    width: 70%;
+                }
+
+                & span {
+                    padding: 0 0.75rem;
+                }
+
+                & input {
+                    height: 2.25rem;
+                    width: 100%;
+                    border: 0;
+
+                    border-radius: $border-radius;
+                }
+            }
+            & a {
+                text-decoration: none;
+                color: $colour-darkgray;
+                & span {
+                    padding: 0 0.75rem;
+                }
+            }
+            &__login {
+                @include navbar__elements;
+            }
+            &__addRecipe {
+                @include navbar__elements;
+            }
+        }
+    }
+}

@@ -132,6 +132,98 @@ p {
   }
 }
 
+#navbar-addRecipe.navbar {
+  padding: 0 1rem !important;
+}
+#navbar-addRecipe.navbar-light {
+  background-color: #f48574 !important;
+}
+#navbar-addRecipe.navbar-brand {
+  color: #fff !important;
+  font-size: 2.25rem !important;
+  letter-spacing: 0.2rem;
+}
+#navbar-addRecipe.navbar-collapse {
+  justify-content: flex-end;
+}
+#navbar-addRecipe.navbar .navbar__search {
+  border: solid thin #333333;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  height: 2.25rem;
+}
+@media (min-width: 1200px) {
+  #navbar-addRecipe.navbar .navbar__search {
+    width: 70%;
+  }
+}
+#navbar-addRecipe.navbar .navbar__search span {
+  padding: 0 0.75rem;
+}
+#navbar-addRecipe.navbar .navbar__search input {
+  height: 2.25rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.35rem;
+}
+#navbar-addRecipe.navbar .navbar a {
+  text-decoration: none;
+  color: #333333;
+}
+#navbar-addRecipe.navbar .navbar a span {
+  padding: 0 0.75rem;
+}
+#navbar-addRecipe.navbar .navbar__login {
+  border: solid thin #333333;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  height: 2.25rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+#navbar-addRecipe.navbar .navbar__login:hover {
+  background-color: #333333;
+}
+#navbar-addRecipe.navbar .navbar__login:hover a {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #navbar-addRecipe.navbar .navbar__login {
+    margin-left: 1rem;
+  }
+}
+#navbar-addRecipe.navbar .navbar__addRecipe {
+  border: solid thin #333333;
+  border-radius: 0.35rem;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+  height: 2.25rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+#navbar-addRecipe.navbar .navbar__addRecipe:hover {
+  background-color: #333333;
+}
+#navbar-addRecipe.navbar .navbar__addRecipe:hover a {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #navbar-addRecipe.navbar .navbar__addRecipe {
+    margin-left: 1rem;
+  }
+}
+
 .form--username {
   border: solid thin #f48574;
   border-radius: 0.35rem;
