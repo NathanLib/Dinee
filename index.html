@@ -58,6 +58,229 @@
         </div>
     </nav>
 
+    <!-- ***************************************************************************************** -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="filters-container" class="col-2">
+                <div class="row filters shadow">
+                    <div class="col-11 filters__heading">
+                        <h2>Filters</h2>
+                        <hr>
+                    </div>
+
+                    <div class="col-11 filters--open">
+                        <p>Open <span><i class="fas fa-sort-down"></i></span> </p>
+                    </div>
+
+                    <div class="col-12 filters__price">
+                        <h4>Price</h4>
+                        <div class="row options">
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="price1">
+                                <label class="form-check-label" for="price1">
+                                    ≤ £5
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="price2">
+                                <label class="form-check-label" for="price2">
+                                    £ 5 - 10
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="price4">
+                                <label class="form-check-label" for="price3">
+                                    £ 10 - 20
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="price4">
+                                <label class="form-check-label" for="price4">
+                                    ≥ £20
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 filters__time">
+                        <h4>Time</h4>
+                        <div class="row options">
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="time1">
+                                <label class="form-check-label" for="time1">
+                                    ≤ 20min
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="time2">
+                                <label class="form-check-label" for="time2">
+                                    20 - 40min
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="time3">
+                                <label class="form-check-label" for="time3">
+                                    40min - 1h
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="time4">
+                                <label class="form-check-label" for="time4">
+                                    ≥ 1h
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 filters__difficulty">
+                        <h4>Difficulty</h4>
+                        <div class="row options">
+                            <div class="col">
+                                <div class="range">
+                                    <input type="range" min="1" max="3" steps="1" value="1">
+                                </div>
+
+                                <ul class="range-labels">
+                                    <li class="active selected">Easy</li>
+                                    <li>Medium</li>
+                                    <li>Expert</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 filters__type">
+                        <h4>Type</h4>
+                        <div class="row options">
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="type1">
+                                <label class="form-check-label" for="type1">
+                                    Indian
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="type2">
+                                <label class="form-check-label" for="type2">
+                                    Japanese
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="type3">
+                                <label class="form-check-label" for="type3">
+                                    French
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="type4">
+                                <label class="form-check-label" for="type4">
+                                    English
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 filters__specificities">
+                        <h4>Specificities</h4>
+                        <div class="row options">
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="spec1">
+                                <label class="form-check-label" for="spec1">
+                                    Vegetarian
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="spec2">
+                                <label class="form-check-label" for="spec2">
+                                    Gluten free
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="spec3">
+                                <label class="form-check-label" for="spec3">
+                                    Vegan
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline">
+                                <input class="form-check-input" type="checkbox" value="" id="spec4">
+                                <label class="form-check-label" for="spec4">
+                                    Lactose free
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 filters__search">
+                        <h4>Search</h4>
+                        <div class="row options">
+                            <div class="col-4 form-check inline search1">
+                                <input class="form-check-input" type="checkbox" value="" id="search1">
+                                <label class="form-check-label" for="search1">
+                                    Cooking techniques
+                                </label>
+                            </div>
+                            <div class="col-4 form-check inline search2">
+                                <input class="form-check-input" type="checkbox" value="" id="search2" checked>
+                                <label class="form-check-label" for="search2">
+                                    Recipe
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 filters--close">
+                        <p>Close <span><i class="fas fa-sort-up"></i></span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9 all-recipes">
+                <div class="recipe-preview shadow">
+                    <div class="recipe-preview__picture">
+                        <img src="public/img/eggplantGratin.png" alt="eggplantGratin">
+                        <div class="recipe-information">
+                            <div class="recipe-information__text">
+                                <div class="recipe-information__text__time">
+                                    <p>
+                                        <span><i class="fas fa-clock"></i></span>
+                                        25min
+                                    </p>
+                                </div>
+                                <div class="recipe-information__text__diffulty">
+                                    <p>
+                                        <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                        Medium
+                                    </p>
+                                </div>
+                                <div class="recipe-information__text__cost">
+                                    <p>
+                                        <span><i class="fas fa-wallet"></i></span>
+                                        <span>Av.</span> £4
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="recipe-information__text__favorites">
+                                    <p>
+                                        <span><i class="far fa-heart"></i></span>
+                                        Save this recipe
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-preview__creator">
+                            <p>
+                                <span><i class="fas fa-user"></i></span>
+                                <span class="recipe-preview__creator__by">By</span> Patrick87
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="recipe-preview__title">
+                        <h4>Eggplant gratin</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************************************************************************** -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://kit.fontawesome.com/2b9d48c15f.js" crossorigin="anonymous"></script>

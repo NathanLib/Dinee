@@ -1,0 +1,170 @@
+.filters {
+    border: solid $colour-primary 0.375rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1.5rem 0.5rem;
+    width: inherit;
+    min-width: 275px;
+
+    &__heading {
+        color: $colour-primary;
+        text-align: center;
+
+        & hr {
+            margin-top: 0.5rem;
+            border-top: solid $colour-primary 0.125rem;
+        }
+    }
+
+    &__difficulty {
+        & h4 {
+            margin-bottom: 1.25rem !important;
+        }
+    }
+
+    & .options {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & h4 {
+        margin-bottom: 0.5rem;
+    }
+
+    &--open {
+        display: none;
+        text-align: center;
+        color: gray;
+        margin-top: -5px;
+        margin-left: -12px;
+
+        & span {
+            position: relative;
+        }
+
+        & i {
+            font-size: 1.5rem;
+            margin-left: 5px;
+            position: absolute;
+            transform: translate(25%, -25%);
+        }
+    }
+    &--close {
+        display: none;
+        text-align: center;
+        color: gray;
+        margin-top: -5px;
+        margin-left: -12px;
+
+        & span {
+            position: relative;
+        }
+
+        & i {
+            font-size: 1.5rem;
+            margin-left: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(25%, -25%);
+        }
+    }
+}
+
+.range {
+    position: relative;
+    width: 180px;
+    height: 5px;
+}
+
+.range input {
+    width: 100%;
+    position: absolute;
+    top: 2px;
+    height: 0;
+    -webkit-appearance: none;
+
+    // Thumb
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none; // needed again for Chrome & Safari
+        @include rangeThumb;
+    }
+
+    &::-moz-range-thumb {
+        @include rangeThumb;
+    }
+
+    &::-ms-thumb {
+        @include rangeThumb;
+    }
+
+    // Track
+    &::-webkit-slider-runnable-track {
+        @include rangeTrack;
+    }
+
+    &::-moz-range-track {
+        @include rangeTrack;
+    }
+
+    &::-ms-track {
+        @include rangeTrack;
+    }
+
+    &:focus {
+        // override outline/background on focus
+        background: none;
+        outline: none;
+    }
+
+    &::-ms-track {
+        // A little somethin' somethin' for IE
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+}
+
+// Labels below slider
+.range-labels {
+    margin: 18px -41px 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        position: relative;
+        float: left;
+        width: 88.25px;
+        text-align: center;
+        color: #b2b2b2;
+        font-size: 14px;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            left: 0;
+            content: "";
+            margin: 0 auto;
+            width: 9px;
+            height: 9px;
+            background: #b2b2b2;
+            border-radius: 50%;
+        }
+    }
+
+    .active {
+        color: #3bccaa;
+    }
+
+    .selected::before {
+        background: #3bccaa;
+    }
+
+    .active.selected::before {
+        display: none;
+    }
+}

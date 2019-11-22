@@ -9,6 +9,13 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
 }
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rosario", sans-serif;
+}
 
 textarea {
     font-family: "Roboto", sans-serif;
@@ -19,6 +26,10 @@ button {
 }
 
 p {
+    font-family: "Roboto", sans-serif;
+}
+
+label {
     font-family: "Roboto", sans-serif;
 }
 
