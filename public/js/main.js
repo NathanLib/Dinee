@@ -28,6 +28,16 @@ addEvent(window, "resize", log_form_center);
 
 // *****************************************
 
+function truncateText(element, maxLength) {
+
+    if (element.length > maxLength) {
+        element = element.substr(0, maxLength) + '...';
+    }
+    return element;
+}
+
+// *****************************************
+
 $(document).ready(function () {
 
     $(".recipe-preview")
@@ -129,5 +139,23 @@ $(document).ready(function () {
         window.RT = setTimeout(function () {
             this.location.reload(false); /* false to get page from cache */
         }, 100);
+    });
+
+    // ********************************
+
+    $(".categories .popular, .categories .recent, .categories .bestRated").click(function () {
+        $(this).attr("id", 'selected');
+        $(".categories .popular, .categories .recent, .categories .bestRated").not(this).removeAttr('id', "selected");
+    })
+
+    // ********************************
+
+    $(".recipe-preview #recipe3").css("padding-bottom", "1rem");
+    $(".recipe-preview #recipe5, .recipe-preview #recipe6").css("padding-top", "18px");
+
+    $('.recipe-preview__title h4').toArray().forEach(function (element) {
+        if (element.innerText.length > 16) {
+            element.innerText = truncateText(element.innerText, 12);
+        }
     });
 });

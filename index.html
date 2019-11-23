@@ -230,49 +230,288 @@
             </div>
 
             <div class="col-9 all-recipes">
-                <div class="recipe-preview shadow">
-                    <div class="recipe-preview__picture">
-                        <img src="public/img/eggplantGratin.png" alt="eggplantGratin">
-                        <div class="recipe-information">
-                            <div class="recipe-information__text">
-                                <div class="recipe-information__text__time">
-                                    <p>
-                                        <span><i class="fas fa-clock"></i></span>
-                                        25min
-                                    </p>
+                <div class="row categories">
+                    <ul>
+                        <li id="selected" class="popular">Popular</li>
+                        <li id="" class="recent">Recent</li>
+                        <li id="" class="bestRated">Best rated</li>
+                    </ul>
+                </div>
+                <div class="row recipe-preview-container">
+                    <div class="recipe-preview shadow">
+                        <div class="recipe-preview__picture">
+                            <img src="public/img/eggplantGratin.png" alt="eggplantGratin">
+                            <div class="recipe-information">
+                                <div class="recipe-information__text">
+                                    <div class="recipe-information__text__time">
+                                        <p>
+                                            <span><i class="fas fa-clock"></i></span>
+                                            25min
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__diffulty">
+                                        <p>
+                                            <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                            Medium
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__cost">
+                                        <p>
+                                            <span><i class="fas fa-wallet"></i></span>
+                                            <span>Av.</span> £4
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="recipe-information__text__favorites">
+                                        <p>
+                                            <span><i class="far fa-heart"></i></span>
+                                            Save this recipe
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="recipe-information__text__diffulty">
-                                    <p>
-                                        <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
-                                        Medium
-                                    </p>
-                                </div>
-                                <div class="recipe-information__text__cost">
-                                    <p>
-                                        <span><i class="fas fa-wallet"></i></span>
-                                        <span>Av.</span> £4
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="recipe-information__text__favorites">
-                                    <p>
-                                        <span><i class="far fa-heart"></i></span>
-                                        Save this recipe
-                                    </p>
-                                </div>
+                            </div>
+
+                            <div class="recipe-preview__creator">
+                                <p>
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span class="recipe-preview__creator__by">By</span> Patrick87
+                                </p>
                             </div>
                         </div>
 
-                        <div class="recipe-preview__creator">
-                            <p>
-                                <span><i class="fas fa-user"></i></span>
-                                <span class="recipe-preview__creator__by">By</span> Patrick87
-                            </p>
+                        <div id="recipe1" class="recipe-preview__title">
+                            <h4>Eggplant gratin</h4>
                         </div>
                     </div>
 
-                    <div class="recipe-preview__title">
-                        <h4>Eggplant gratin</h4>
+                    <div class="recipe-preview shadow">
+                        <div class="recipe-preview__picture">
+                            <img src="public/img/pastaAllaNorma.png" alt="pasta alla norma">
+                            <div class="recipe-information">
+                                <div class="recipe-information__text">
+                                    <div class="recipe-information__text__time">
+                                        <p>
+                                            <span><i class="fas fa-clock"></i></span>
+                                            25min
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__diffulty">
+                                        <p>
+                                            <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                            Medium
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__cost">
+                                        <p>
+                                            <span><i class="fas fa-wallet"></i></span>
+                                            <span>Av.</span> £4
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="recipe-information__text__favorites">
+                                        <p>
+                                            <span><i class="far fa-heart"></i></span>
+                                            Save this recipe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipe-preview__creator">
+                                <p>
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span class="recipe-preview__creator__by">By</span> Patrick87
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="recipe2" class="recipe-preview__title">
+                            <h4>Pasta alla Norma</h4>
+                        </div>
+                    </div>
+
+                    <div class="recipe-preview shadow">
+                        <div class="recipe-preview__picture">
+                            <img src="public/img/quinoaPancake.png" alt="quinoaPancake">
+                            <div class="recipe-information">
+                                <div class="recipe-information__text">
+                                    <div class="recipe-information__text__time">
+                                        <p>
+                                            <span><i class="fas fa-clock"></i></span>
+                                            15min
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__diffulty">
+                                        <p>
+                                            <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                            Medium
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__cost">
+                                        <p>
+                                            <span><i class="fas fa-wallet"></i></span>
+                                            <span>Av.</span> £2.5
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="recipe-information__text__favorites">
+                                        <p>
+                                            <span><i class="far fa-heart"></i></span>
+                                            Save this recipe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipe-preview__creator">
+                                <p>
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span class="recipe-preview__creator__by">By</span> Patrick87
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="recipe3" class="recipe-preview__title">
+                            <h4>Quinoa Sweet Pancake</h4>
+                        </div>
+                    </div>
+
+                    <div class="recipe-preview shadow">
+                        <div class="recipe-preview__picture">
+                            <img src="public/img/risotto.png" alt="risotto">
+                            <div class="recipe-information">
+                                <div class="recipe-information__text">
+                                    <div class="recipe-information__text__time">
+                                        <p>
+                                            <span><i class="fas fa-clock"></i></span>
+                                            25min
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__diffulty">
+                                        <p>
+                                            <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                            Medium
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__cost">
+                                        <p>
+                                            <span><i class="fas fa-wallet"></i></span>
+                                            <span>Av.</span> £2
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="recipe-information__text__favorites">
+                                        <p>
+                                            <span><i class="far fa-heart"></i></span>
+                                            Save this recipe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipe-preview__creator">
+                                <p>
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span class="recipe-preview__creator__by">By</span> Patrick87
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="recipe4" class="recipe-preview__title">
+                            <h4>Risotto</h4>
+                        </div>
+                    </div>
+
+                    <div class="recipe-preview shadow">
+                        <div class="recipe-preview__picture">
+                            <img src="public/img/potatoesCake.png" alt="potatoesCake">
+                            <div class="recipe-information">
+                                <div class="recipe-information__text">
+                                    <div class="recipe-information__text__time">
+                                        <p>
+                                            <span><i class="fas fa-clock"></i></span>
+                                            20min
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__diffulty">
+                                        <p>
+                                            <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                            Medium
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__cost">
+                                        <p>
+                                            <span><i class="fas fa-wallet"></i></span>
+                                            <span>Av.</span> £4
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="recipe-information__text__favorites">
+                                        <p>
+                                            <span><i class="far fa-heart"></i></span>
+                                            Save this recipe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipe-preview__creator">
+                                <p>
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span class="recipe-preview__creator__by">By</span> Patrick87
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="recipe5" class="recipe-preview__title">
+                            <h4>Potatoes cake</h4>
+                        </div>
+                    </div>
+
+                    <div class="recipe-preview shadow">
+                        <div class="recipe-preview__picture">
+                            <img src="public/img/thaiPrawn.png" alt="thaiPrawn">
+                            <div class="recipe-information">
+                                <div class="recipe-information__text">
+                                    <div class="recipe-information__text__time">
+                                        <p>
+                                            <span><i class="fas fa-clock"></i></span>
+                                            55min
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__diffulty">
+                                        <p>
+                                            <span><img src="public/img/chef-hat.png" alt="chef-hat"></span>
+                                            Medium
+                                        </p>
+                                    </div>
+                                    <div class="recipe-information__text__cost">
+                                        <p>
+                                            <span><i class="fas fa-wallet"></i></span>
+                                            <span>Av.</span> £8
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="recipe-information__text__favorites">
+                                        <p>
+                                            <span><i class="far fa-heart"></i></span>
+                                            Save this recipe
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipe-preview__creator">
+                                <p>
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span class="recipe-preview__creator__by">By</span> Patrick87
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="recipe6" class="recipe-preview__title">
+                            <h4>Thai Prawn</h4>
+                        </div>
                     </div>
                 </div>
             </div>
