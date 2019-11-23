@@ -3,6 +3,10 @@
 }
 
 .categories {
+    @media (min-width: 576px) and (max-width: 1500px) {
+        padding-left: 5rem;
+    }
+
     & ul {
         list-style: none;
         display: flex;
@@ -30,7 +34,7 @@
 }
 
 .recipe-preview-container {
-    padding: 0rem 10rem;
+    padding: 0 0 0 10rem;
 
     @media (max-width: 576px) {
         padding: 0;
