@@ -1,0 +1,73 @@
+.step1 {
+    & > div {
+        padding: 0;
+        margin: 0.5rem 0;
+        display: flex;
+    }
+    & .content__nameRecipe {
+        @include addRecipe-input;
+    }
+
+    & .content_mainInformation {
+        & > div {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & img {
+            width: 3rem;
+            height: 3rem;
+        }
+        & input {
+            @include addRecipe-input;
+        }
+    }
+
+    & .content_ingredients {
+        margin-bottom: 1rem;
+
+        & .row {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: space-between;
+
+            @media (max-width: 576px) {
+                justify-content: flex-start;
+            }
+
+            & > div {
+                padding: 0;
+            }
+        }
+        & input {
+            @include addRecipe-input;
+        }
+        & .quantity {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+
+            @media (max-width: 576px) {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    & .btn_addIngredient {
+        padding: 0.25rem 1rem;
+        font-size: 1.35rem;
+        @include border($colour-secondary);
+        border-width: 2px;
+        background-color: $colour-secondary;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $colour-secondary;
+            text-decoration: underline;
+            box-shadow: $shadow;
+        }
+    }
+}

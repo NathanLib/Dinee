@@ -3,6 +3,14 @@
     border-radius: $border-radius;
 }
 
+@mixin addRecipe-input {
+    border: solid 2px $colour-secondary;
+    border-radius: $border-radius;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    font-size: 1.35rem;
+}
+
 @mixin navbar__elements {
     @include border;
     color: $colour-darkgray;
@@ -66,4 +74,12 @@
     height: 2px;
     cursor: pointer;
     background: #b2b2b2;
+}
+
+@mixin vertical-separator($colour) {
+    width: 0;
+    background-color: $colour;
+    border: solid $colour thick;
+    border-radius: 2rem;
+    margin-right: 0.75rem;
 }

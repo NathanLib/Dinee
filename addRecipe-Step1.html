@@ -21,42 +21,150 @@
 </head>
 
 <body>
-    <nav id="navbar-addRecipe" class="navbar sticky-top navbar-expand-sm navbar-light bg-light shadow">
-        <a class="navbar-brand" href="#">
-            <img src="public/img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-            Dinee
-        </a>
+    <div id="addRecipe" class="container-fluid">
+        <nav id="navbar-addRecipe" class="navbar sticky-top navbar-expand-sm navbar-light bg-light shadow">
+            <a class="navbar-brand" href="#">
+                <img src="public/img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                Dinee
+            </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <div class="navbar__search">
-                <span>
-                    <i class="fas fa-search"></i>
-                </span>
-                <input type="search" placeholder="Search" aria-label="Search">
-            </div>
-            <div class="navbar__addRecipe">
-                <a href="">
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="navbar__search">
                     <span>
-                        <i class="fas fa-book-open"></i>
+                        <i class="fas fa-search"></i>
                     </span>
-                    All recipes
-                </a>
+                    <input type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="navbar__addRecipe">
+                    <a href="">
+                        <span>
+                            <i class="fas fa-book-open"></i>
+                        </span>
+                        All recipes
+                    </a>
+                </div>
+                <div class="navbar__login">
+                    <a href="signin.html">
+                        <span>
+                            <i class="fas fa-user"></i>
+                        </span>
+                        Patrick87
+                    </a>
+                </div>
             </div>
-            <div class="navbar__login">
-                <a href="signin.html">
-                    <span>
-                        <i class="fas fa-user"></i>
-                    </span>
-                    Patrick87
-                </a>
+        </nav>
+
+
+        <div class="row addRecipe">
+            <div class="col-9 addRecipe-container">
+                <div class="row addRecipe__heading">
+                    <div class="vertical-separator"></div>
+                    <h1>Add a new recipe</h1>
+                </div>
+                <div class="row addRecipe__content">
+                    <div class="col-sm-6">
+                        <div class="row content__heading">
+                            <div class="vertical-separator"></div>
+                            <h3>Details</h3>
+                        </div>
+                        <div class="row step1">
+                            <div class="col-12">
+                                <input class="content__nameRecipe" type="text" placeholder="Name of the recipe"
+                                    aria-label="Name">
+                            </div>
+                            <div class="col-12 content_mainInformation">
+                                <div class="col-4 col-sm-2">
+                                    <img src="public/img/icon_preparation.png" alt="icon_preparation">
+                                </div>
+                                <div class="col-8 col-sm-10">
+                                    <input type="text" placeholder="Preparation time" aria-label="Preparation">
+                                </div>
+                            </div>
+                            <div class="col-12 content_mainInformation">
+                                <div class="col-4 col-sm-2">
+                                    <img src="public/img/icon_cooking.png" alt="icon_cooking">
+                                </div>
+                                <div class="col-8 col-sm-10">
+                                    <input type="text" placeholder="Cooking time" aria-label="Preparation">
+                                </div>
+                            </div>
+                            <div class="col-12 content_mainInformation">
+                                <div class="col-4 col-sm-2">
+                                    <img src="public/img/icon_difficulty.png" alt="icon_difficulty">
+                                </div>
+                                <div class="col-8 col-sm-10">
+                                    <input type="text" placeholder="Difficultuy (Easy/Medium/Expert)"
+                                        aria-label="Preparation">
+                                </div>
+                            </div>
+                            <div class="col-12 content_mainInformation">
+                                <div class="col-4 col-sm-2">
+                                    <img src="public/img/icon_serve.png" alt="icon_serve">
+                                </div>
+                                <div class="col-8 col-sm-10">
+                                    <input type="text" placeholder="Number of serves" aria-label="Serves">
+                                </div>
+                            </div>
+                            <div class="col-12 content_mainInformation">
+                                <div class="col-4 col-sm-2">
+                                    <img src="public/img/icon_cost.png" alt="icon_cost">
+                                </div>
+                                <div class="col-8 col-sm-10">
+                                    <input type="text" placeholder="Average coset" aria-label="Cost">
+                                </div>
+                            </div>
+                            <div class="col-12 content_mainInformation">
+                                <div class="col-4 col-sm-2">
+                                    <img src="public/img/icon_utensil.png" alt="icon_utensil">
+                                </div>
+                                <div class="col-8 col-sm-10">
+                                    <input type="text" placeholder="Utensils" aria-label="Utensils">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="row content__heading">
+                            <div class="vertical-separator"></div>
+                            <h3>Ingredient</h3>
+                        </div>
+                        <div class="row step1">
+                            <div class="col-12 content_ingredients">
+                                <div class="row">
+                                    <div class="col-10 col-sm-7">
+                                        <input type="text" placeholder="Name" aria-label="Name">
+                                    </div>
+                                    <div class="col-10 col-sm-2 quantity">
+                                        <input type="text" placeholder="Qty" aria-label="Quantity">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn_addIngredient">
+                                Add an ingredient
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_nextStep">
+                    <a href="">Next step</a>
+                </div>
+            </div>
+            <div class="col-10 col-sm-2 summary-container shadow">
+                <div class="summary__heading">
+                    <h3>Summary</h3>
+                    <hr>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

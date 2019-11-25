@@ -1,0 +1,101 @@
+#addRecipe {
+    &.container-fluid {
+        overflow: visible;
+    }
+}
+
+.addRecipe {
+    margin: 2% 2.5%;
+    justify-content: space-between;
+
+    & .addRecipe-container {
+        & .btn_nextStep {
+            position: absolute;
+            right: 0;
+            bottom: 0.5rem;
+            padding: 0.25rem 1.5rem;
+            font-size: 1.35rem;
+            text-align: center;
+            width: max-content;
+            @include border($colour-secondary);
+            border-width: 2px;
+            background-color: $colour-secondary;
+
+            & a {
+                color: white;
+                font-weight: 900;
+            }
+
+            &:hover {
+                background-color: white;
+                box-shadow: $shadow;
+
+                & a {
+                    color: $colour-secondary;
+                    text-decoration: underline;
+                }
+            }
+            @media (max-width: 576px) {
+                bottom: -75px;
+                left: 0;
+            }
+        }
+    }
+
+    &__heading {
+        margin-bottom: 1.5rem;
+
+        & .vertical-separator {
+            @include vertical-separator($colour-secondary);
+        }
+
+        & h1 {
+            padding: 8px 0;
+
+            @media (max-width: 576px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__content {
+        justify-content: space-between;
+
+        & .content__heading {
+            margin-bottom: 1rem;
+
+            & .vertical-separator {
+                @include vertical-separator($colour-secondary);
+            }
+
+            & h3 {
+                padding: 8px 0;
+            }
+        }
+    }
+
+    .summary {
+        &-container {
+            border: solid $colour-secondary thick;
+            padding: 1rem;
+            border-radius: 1rem;
+
+            @media (max-width: 576px) {
+                margin-top: 100px;
+            }
+        }
+
+        &__heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $colour-secondary;
+
+            & hr {
+                width: 80%;
+                border-top: solid $colour-secondary 2px;
+            }
+        }
+    }
+}
