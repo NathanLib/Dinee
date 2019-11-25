@@ -69,7 +69,7 @@
             }
 
             & h3 {
-                padding: 8px 0;
+                padding: 8px 0 !important;
             }
         }
     }
@@ -79,9 +79,11 @@
             border: solid $colour-secondary thick;
             padding: 1rem;
             border-radius: 1rem;
+            min-height: 75vh;
 
             @media (max-width: 576px) {
                 margin-top: 100px;
+                min-height: 0;
             }
         }
 
@@ -95,6 +97,39 @@
             & hr {
                 width: 80%;
                 border-top: solid $colour-secondary 2px;
+            }
+        }
+
+        &__content {
+            & h5 {
+                font-weight: 900;
+                margin-bottom: 0.25rem;
+                margin-top: 1rem;
+            }
+            & p {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.25rem;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+
+                    & img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        margin: 0 0.5rem;
+                        margin-top: -1px;
+                    }
+                }
+            }
+        }
+
+        &__filters {
+            text-decoration: underline;
+
+            &__options {
+                padding-left: 30px;
             }
         }
     }

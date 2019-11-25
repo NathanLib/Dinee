@@ -673,16 +673,18 @@ p {
   margin-right: 0.75rem;
 }
 .addRecipe__content .content__heading h3 {
-  padding: 8px 0;
+  padding: 8px 0 !important;
 }
 .addRecipe .summary-container {
   border: solid #f48574 thick;
   padding: 1rem;
   border-radius: 1rem;
+  min-height: 75vh;
 }
 @media (max-width: 576px) {
   .addRecipe .summary-container {
     margin-top: 100px;
+    min-height: 0;
   }
 }
 .addRecipe .summary__heading {
@@ -695,6 +697,32 @@ p {
 .addRecipe .summary__heading hr {
   width: 80%;
   border-top: solid #f48574 2px;
+}
+.addRecipe .summary__content h5 {
+  font-weight: 900;
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+}
+.addRecipe .summary__content p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+.addRecipe .summary__content p span {
+  display: flex;
+  align-items: center;
+}
+.addRecipe .summary__content p span img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.5rem;
+  margin-top: -1px;
+}
+.addRecipe .summary__filters {
+  text-decoration: underline;
+}
+.addRecipe .summary__filters__options {
+  padding-left: 30px;
 }
 
 body.log {
@@ -872,6 +900,141 @@ body.log {
   color: #f48574;
   text-decoration: underline;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.step2 > div {
+  padding: 0;
+  display: flex;
+}
+.step2 h5 {
+  font-weight: 900;
+}
+.step2 textarea {
+  border: solid #f48574 2px;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.step2 .content__heading {
+  padding-left: 15px;
+}
+.step2 .content__addStep {
+  padding: 0.25rem 1rem;
+  font-size: 1.35rem;
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+  border-width: 2px;
+  background-color: #f48574;
+  color: white;
+}
+.step2 .content__addStep:hover {
+  background-color: white;
+  color: #f48574;
+  text-decoration: underline;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.step3 {
+  justify-content: flex-start;
+}
+.step3 > div {
+  padding: 0;
+  display: flex;
+}
+.step3 .content__heading {
+  padding-left: 15px;
+}
+@media (max-width: 576px) {
+  .step3 .content__heading h3 {
+    font-size: 1.5rem;
+  }
+}
+.step3 .content__filters {
+  padding-left: 15px;
+  margin-bottom: 0.75rem;
+}
+.step3 .content__filters .custom-checkbox {
+  margin-bottom: 0.25rem;
+  max-width: 200px;
+}
+.step3 .content__files {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  .step3 .content__files {
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+  .step3 .content__files p {
+    margin-right: 1rem;
+  }
+}
+.step3 .content__files .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.step3 .content__files .inputfile + label {
+  font-weight: 700;
+  color: white;
+  background-color: #f48574;
+  display: inline-block;
+  cursor: pointer;
+  width: max-content;
+  padding: 0.25rem 2rem;
+  border-radius: 0.35rem;
+  margin-top: 6px;
+}
+.step3 hr {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+@media (min-width: 576px) {
+  .step3 hr {
+    width: 200px;
+  }
+}
+
+.custom-checkbox .custom-control-label::before {
+  margin-top: -1px;
+}
+
+.step4 h5 {
+  margin-left: -15px;
+  text-align: justify;
+}
+.step4 button {
+  padding: 0.5rem 1.5rem;
+  border: solid thin #f48574;
+  border-radius: 0.35rem;
+  border-width: 2px;
+  background-color: #f48574;
+  margin-left: -15px;
+  margin-top: 1.5rem;
+}
+.step4 button a {
+  color: white;
+  font-size: 1.35rem;
+}
+.step4 button:hover {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.step4 button:hover a {
+  text-decoration: underline;
+  color: #f48574;
+}
+
+@media (max-width: 576px) {
+  #summary {
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

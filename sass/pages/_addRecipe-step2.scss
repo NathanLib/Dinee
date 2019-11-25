@@ -1,0 +1,40 @@
+.step2 {
+    & > div {
+        padding: 0;
+        display: flex;
+    }
+
+    & h5 {
+        font-weight: 900;
+    }
+
+    & textarea {
+        border: solid $colour-secondary 2px;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    & .content {
+        &__heading {
+            padding-left: 15px;
+        }
+
+        &__addStep {
+            padding: 0.25rem 1rem;
+            font-size: 1.35rem;
+            @include border($colour-secondary);
+            border-width: 2px;
+            background-color: $colour-secondary;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: $colour-secondary;
+                text-decoration: underline;
+                box-shadow: $shadow;
+            }
+        }
+    }
+}

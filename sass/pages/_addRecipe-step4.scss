@@ -1,0 +1,35 @@
+.step4 {
+    & h5 {
+        margin-left: -15px;
+        text-align: justify;
+    }
+
+    & button {
+        padding: 0.5rem 1.5rem;
+        @include border($colour-secondary);
+        border-width: 2px;
+        background-color: $colour-secondary;
+        margin-left: -15px;
+        margin-top: 1.5rem;
+
+        & a {
+            color: white;
+            font-size: 1.35rem;
+        }
+
+        &:hover {
+            background-color: white;
+            box-shadow: $shadow;
+
+            & a {
+                text-decoration: underline;
+                color: $colour-secondary;
+            }
+        }
+    }
+}
+#summary {
+    @media (max-width: 576px) {
+        margin-top: 50px;
+    }
+}

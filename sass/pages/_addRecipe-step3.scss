@@ -1,0 +1,78 @@
+.step3 {
+    justify-content: flex-start;
+
+    & > div {
+        padding: 0;
+        display: flex;
+    }
+
+    & .content {
+        &__heading {
+            padding-left: 15px;
+
+            @media (max-width: 576px) {
+                & h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &__filters {
+            padding-left: 15px;
+            margin-bottom: 0.75rem;
+
+            & .custom-checkbox {
+                margin-bottom: 0.25rem;
+                max-width: 200px;
+            }
+        }
+
+        &__files {
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            @media (min-width: 576px) {
+                flex-direction: row;
+                align-items: center;
+                font-size: 1.25rem;
+
+                & p {
+                    margin-right: 1rem;
+                }
+            }
+
+            & .inputfile {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+            & .inputfile + label {
+                font-weight: 700;
+                color: white;
+                background-color: $colour-secondary;
+                display: inline-block;
+                cursor: pointer;
+                width: max-content;
+                padding: 0.25rem 2rem;
+                border-radius: $border-radius;
+                margin-top: 6px;
+            }
+        }
+    }
+
+    & hr {
+        width: 100%;
+        margin-top: 0.25rem;
+
+        @media (min-width: 576px) {
+            width: 200px;
+        }
+    }
+}
+
+.custom-checkbox .custom-control-label::before {
+    margin-top: -1px;
+}
