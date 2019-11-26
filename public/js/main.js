@@ -158,4 +158,26 @@ $(document).ready(function () {
             element.innerText = truncateText(element.innerText, 12);
         }
     });
+
+    // ********************************
+
+    var $serves = $(".serves__number p").text();
+
+    $(".serves__btnLess").click(function () {
+        $serves = $serves - 1;
+        $(".serves__number p").text($serves);
+    });
+    $(".serves__btnMore").click(function () {
+        $serves = parseInt($serves) + 1;
+        $(".serves__number p").text($serves);
+    });
+
+    // ********************************
+
+    $(".social #save").click(function () {
+        $("#save span i").removeClass("far");
+        $("#save span i").addClass("fas");
+        $("#save span").css('color', "#b30000");
+        $("#save h6 #save__text").text("Saved!");
+    })
 });

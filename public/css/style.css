@@ -904,6 +904,9 @@ body.log {
   font-weight: 900;
   margin-left: 5px;
 }
+.recipeDetails .content__heading .social > div > div {
+  cursor: pointer;
+}
 .recipeDetails .content__heading .social span {
   width: 1.5rem;
   font-size: 1.5rem;
@@ -915,6 +918,10 @@ body.log {
 }
 .recipeDetails .content__heading .social h6 span {
   margin-right: 10px;
+}
+.recipeDetails .content__heading .social #save__text {
+  font-size: 1rem;
+  width: max-content;
 }
 @media (min-width: 576px) {
   .recipeDetails .content__heading .social {
