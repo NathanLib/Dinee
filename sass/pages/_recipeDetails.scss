@@ -1,0 +1,258 @@
+.recipeDetails {
+    &.container-fluid {
+        overflow: visible;
+    }
+
+    & .content {
+        overflow: hidden;
+
+        & .col-12 {
+            flex: 0 0 90% !important;
+        }
+
+        &__heading {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin: 1.5rem 1rem;
+            border: solid $colour-primary 4px;
+            border-radius: 0.75rem;
+            background-color: white;
+
+            & p {
+                color: $colour-gray;
+
+                & #by {
+                    margin-left: 5px;
+                    font-size: 0.8rem;
+                }
+            }
+
+            & .illustrations {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: 15px;
+
+                &__video {
+                    padding: 0;
+                    margin: 0 10px 0 0;
+
+                    img {
+                        width: 10rem;
+                    }
+
+                    @media (min-width: 576px) {
+                        margin: 0 25px 0 0;
+                    }
+                }
+
+                &__photo {
+                    padding: 0;
+
+                    & img {
+                        width: 2.9rem;
+                    }
+                    & #pasta_photo1 {
+                        margin-bottom: 0.2rem;
+                    }
+
+                    @media (min-width: 576px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            & .main-information {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+
+                & h5 {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                & img {
+                    width: 2.5rem;
+                    margin-right: 0.5rem;
+                }
+                &__value {
+                    font-weight: 900;
+                    margin-left: 5px;
+                }
+            }
+
+            & .social {
+                & span {
+                    width: 1.5rem;
+                    font-size: 1.5rem;
+                }
+
+                & h6 {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
+
+                    & span {
+                        margin-right: 10px;
+                    }
+                }
+
+                @media (min-width: 576px) {
+                    border-left: solid $colour-gray thin;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30px;
+                }
+            }
+        }
+
+        &__ingredients {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin: 1.5rem 1rem;
+            border: solid $colour-primary 4px;
+            border-radius: 0.75rem;
+            background-color: white;
+
+            &__heading {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $colour-primary;
+
+                & hr {
+                    width: 100%;
+                    border-top: solid $colour-primary 2px;
+                }
+            }
+
+            &__serves {
+                margin-bottom: 1rem;
+
+                & h5 {
+                    font-weight: 900;
+                    font-size: 1.35rem;
+                }
+
+                & .serves {
+                    display: flex;
+                    justify-content: center;
+
+                    &__btnLess {
+                        color: $colour-primary;
+                        background: none;
+                        font-weight: 900;
+                        height: 3rem;
+                        width: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2.5rem;
+                        cursor: pointer;
+                    }
+                    &__btnMore {
+                        color: $colour-primary;
+                        background: none;
+                        font-weight: 900;
+                        height: 3rem;
+                        width: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2rem;
+                        cursor: pointer;
+                    }
+                    &__number {
+                        width: 3rem;
+                        height: 3rem;
+                        border: solid $colour-primary 2px;
+                        border-radius: 0.5rem;
+                        background-color: $colour-primary;
+                        color: white;
+                        font-size: 1.5rem;
+                        font-weight: 900;
+                        margin: 0 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            &__list {
+                & h6 {
+                    margin: 0 0 1rem 0;
+                    font-size: 1.15rem;
+                }
+                & span {
+                    margin-right: 4px;
+                    font-weight: 900;
+                    font-size: 1.35rem;
+                }
+            }
+        }
+
+        &__instructions {
+            margin: 1.5rem 1rem;
+
+            &__heading {
+                display: flex;
+
+                & .vertical-separator {
+                    border: solid $colour-primary 4px;
+                    border-radius: 1rem;
+                }
+                &__text {
+                    margin-left: 10px;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+
+                    & p {
+                        color: $colour-gray;
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+
+            &__steps {
+                & .step {
+                    margin: 1rem 0;
+                    text-align: justify;
+                }
+                & h5 {
+                    font-weight: 900;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        &__comments {
+            margin: 1.5rem 1rem;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            & .vertical-separator {
+                border: solid $colour-primary 4px;
+                border-radius: 1rem;
+            }
+
+            &__text {
+                margin: 0.5rem 0;
+                & p {
+                    color: $colour-gray;
+                }
+                & > div {
+                    padding: 0;
+                    display: flex;
+                }
+                & textarea {
+                    padding: 0.5rem;
+                    width: 100%;
+                    height: 5rem;
+                    border: solid $colour-darkgray thin;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}

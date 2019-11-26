@@ -39,6 +39,9 @@
     & a {
         text-decoration: none;
         color: $colour-darkgray;
+        @media (max-width: 576px) {
+            width: 75%;
+        }
         & span {
             padding: 0 0.75rem;
         }

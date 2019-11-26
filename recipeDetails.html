@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rosario|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <title>Dinee</title>
+    <link rel="icon" href="public/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-fluid recipeDetails">
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light shadow">
+            <a class="navbar-brand" href="#">
+                <img src="public/img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                Dinee
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="navbar__search">
+                    <span>
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="navbar__addRecipe">
+                    <a href="signin.html">
+                        <span>
+                            <i class="fas fa-book"></i>
+                        </span>
+                        Add a recipe
+                    </a>
+                </div>
+                <div class="navbar__login">
+                    <a href="signin.html">
+                        <span>
+                            <i class="fas fa-user"></i>
+                        </span>
+                        Elodie
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ***************************************************************************************** -->
+
+        <section class="content">
+            <div class="row content__heading shadow">
+                <div class="col-12 col-sm-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Pasta alla Norma</h3>
+                            <p>
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span id="by">By</span>
+                                Patrick87
+                            </p>
+                        </div>
+                        <div class="col-12 illustrations">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 illustrations__video">
+                                    <img src="public/img/pasta_video.png" alt="pasta_video">
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-5 illustrations__photo">
+                                            <img src="public/img/pasta_photo1.png" alt="pasta_photo1" id="pasta_photo1">
+                                        </div>
+                                        <div class="col-5 illustrations__photo">
+                                            <img src="public/img/pasta_photo2.png" alt="pasta_photo2" id="pasta_photo2">
+                                        </div>
+                                        <div class="col-5 illustrations__photo">
+                                            <img src="public/img/pasta_photo2.png" alt="pasta_photo3" id="pasta_photo3">
+                                        </div>
+                                        <div class="col-5 illustrations__photo">
+                                            <img src="public/img/pasta_photo1.png" alt="pasta_photo4" id="pasta_photo4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-2">
+                    <div class="row">
+                        <div class="col-12 main-information">
+                            <h5>
+                                <span>
+                                    <img src="public/img/icon_preparation.png" alt="icon_preparation">
+                                </span>
+                                Preparation:
+                                <span class="main-information__value">10 min</span>
+                            </h5>
+                        </div>
+                        <div class="col-12 main-information">
+                            <h5>
+                                <span>
+                                    <img src="public/img/icon_cooking.png" alt="icon_cooking">
+                                </span>
+                                Cooking:
+                                <span class="main-information__value">15 min</span>
+                            </h5>
+                        </div>
+                        <div class="col-12 main-information">
+                            <h5>
+                                <span>
+                                    <img src="public/img/icon_difficulty.png" alt="icon_difficulty">
+                                </span>
+                                Difficulty:
+                                <span class="main-information__value">Easy</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-12 main-information">
+                            <h5>
+                                <span>
+                                    <img src="public/img/icon_serve.png" alt="icon_serve">
+                                </span>
+                                Serves:
+                                <span class="main-information__value">4</span>
+                            </h5>
+                        </div>
+                        <div class="col-12 main-information">
+                            <h5>
+                                <span>
+                                    <img src="public/img/icon_cost.png" alt="icon_cost">
+                                </span>
+                                Cost:
+                                <span class="main-information__value">£3.5</span>
+                            </h5>
+                        </div>
+                        <div class="col-12 main-information">
+                            <h5>
+                                <span>
+                                    <img src="public/img/icon_utensil.png" alt="icon_utensil">
+                                </span>
+                                Utensils:
+                                <span class="main-information__value">gratin dish, frying pan</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-sm-none">
+                    <hr>
+                </div>
+
+                <div class="col-12 col-sm-2 social">
+                    <div class="row">
+                        <div class="col-12 col-sm-8">
+                            <h6>
+                                <span>
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                Save to My Favorites
+                            </h6>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <h6>
+                                <span>
+                                    <i class="far fa-share-square"></i>
+                                </span>
+                                Share this recipe
+                            </h6>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <p>
+                                153 votes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-2">
+                    <div class="row content__ingredients shadow">
+                        <div class="col-12 content__ingredients__heading">
+                            <h3>Ingredients</h3>
+                            <hr>
+                        </div>
+                        <div class="col-12 content__ingredients__serves">
+                            <h5>
+                                Serves
+                            </h5>
+                            <div class="serves">
+                                <div class="serves__btnLess">
+                                    <p>-</p>
+                                </div>
+                                <div class="serves__number">
+                                    <p>4</p>
+                                </div>
+                                <div class="serves__btnMore">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 content__ingredients__list">
+                            <h6>
+                                <span>1</span>
+                                aubergines
+                            </h6>
+                            <h6>
+                                <span>1</span>
+                                garlic clove, minced
+                            </h6>
+                            <h6>
+                                Olive oil
+                            </h6>
+                            <h6>
+                                <span>400g</span>
+                                of boccole pasta
+                            </h6>
+                            <h6>
+                                Basil, to garnish
+                            </h6>
+                            <h6>
+                                Ricotta salata, to garnish
+                            </h6>
+                            <h6>
+                                <span>400g</span>
+                                of San Marzano tomatoes, (1 tin)
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8">
+                    <div class="row content__instructions">
+                        <div class="col-12 content__instructions__heading">
+                            <div class="vertical-separator"></div>
+                            <div class="content__instructions__heading__text">
+                                <h3>Instructions</h3>
+                                <p>2 steps</p>
+                            </div>
+                        </div>
+                        <div class="col-12 content__instructions__steps">
+                            <div class="step">
+                                <h5>Step 1</h5>
+                                <p>
+                                    To begin, evenly dice the aubergine into 1–2cm cubes and sprinkle with salt. Leave
+                                    in a colander for 10 minutes.
+                                    Gently sauté the minced garlic in 1 tbsp of olive oil for about 30 seconds, or until
+                                    just soft. Then, add the tomatoes
+                                </p>
+                            </div>
+                            <div class="step">
+                                <h5>Step 2</h5>
+                                <p>
+                                    Simmer for 10–15 minutes until the sauce has thickened slightly. Stir intermittently
+                                    to avoid any sticking. In a 9-inch
+                                    gratin dish, arrange the vegetables while tucking small crumbles of goat cheese
+                                    underneath each vegetable. Drizzle the
+                                    remaining 2 tablespoons of olive oil over the shingled vegetables and sprinkle the
+                                    pankoon top.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content__comments">
+                        <div class="vertical-separator"></div>
+                        <div class="col-10">
+                            <h3>Comments</h3>
+                            <div class="row content__comments__text">
+                                <div class="col-12">
+                                    <p>
+                                        <span>
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        Elodie
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <textarea placeholder="Write your comment here..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***************************************************************************************** -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/2b9d48c15f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="public/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
