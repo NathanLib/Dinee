@@ -843,7 +843,7 @@ body.log {
 .recipeDetails .content__heading {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin: 1.5rem 1rem;
+  margin: 1.5rem 1rem 0 1rem;
   border: solid #3bccaa 4px;
   border-radius: 0.75rem;
   background-color: white;
@@ -921,7 +921,8 @@ body.log {
     border-left: solid #636b75 thin;
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 50px;
+    margin-left: 5rem;
   }
 }
 .recipeDetails .content__ingredients {
@@ -1052,6 +1053,26 @@ body.log {
   height: 5rem;
   border: solid #333333 thin;
   border-radius: 0.5rem;
+}
+.recipeDetails .content__comments__text .btn_publish {
+  background-color: #3bccaa;
+  border: solid #3bccaa 2px;
+  border-radius: 0.35rem;
+  padding: 0.25rem 1rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .recipeDetails .content__comments__text .btn_publish {
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .recipeDetails .content__comments__text .publish {
+    align-items: end;
+    margin-left: 15px;
+  }
 }
 
 .step1 > div {
