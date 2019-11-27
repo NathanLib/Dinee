@@ -63,6 +63,7 @@
 
         & .content__heading {
             margin-bottom: 1rem;
+            position: relative;
 
             & .vertical-separator {
                 @include vertical-separator($colour-secondary);
@@ -80,6 +81,7 @@
             padding: 1rem;
             border-radius: 1rem;
             min-height: 75vh;
+            position: relative;
 
             @media (max-width: 576px) {
                 margin-top: 100px;

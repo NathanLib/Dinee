@@ -122,6 +122,7 @@
             border: solid $colour-primary 4px;
             border-radius: 0.75rem;
             background-color: white;
+            position: relative;
 
             &__heading {
                 display: flex;
@@ -231,6 +232,9 @@
                 & h5 {
                     font-weight: 900;
                     margin-bottom: 5px;
+                }
+                & span {
+                    position: relative;
                 }
             }
         }

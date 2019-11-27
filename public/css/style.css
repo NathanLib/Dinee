@@ -58,8 +58,128 @@ p {
   margin: 0;
 }
 
+#icon_coconut {
+  position: absolute;
+  right: -1.25rem;
+  bottom: -0.75rem;
+  width: 2.5rem;
+}
+@media (max-width: 576px) {
+  #icon_coconut {
+    right: -1rem;
+    bottom: -0.5rem;
+    width: 2rem;
+  }
+}
+
+#icon_strawberry {
+  position: absolute;
+  right: -1.25rem;
+  bottom: -2px;
+  width: 2.5rem;
+}
+@media (max-width: 576px) {
+  #icon_strawberry {
+    right: -1rem;
+    width: 2rem;
+  }
+}
+
+#icon_cactus {
+  position: absolute;
+  bottom: -7px;
+  right: 5px;
+  width: 3rem;
+}
+@media (max-width: 576px) {
+  #icon_cactus {
+    display: none;
+  }
+}
+
+#icon_mushroom {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 2.5rem;
+  transform: rotate(330deg);
+}
+
+#icon_tomato {
+  position: absolute;
+  top: -25%;
+  right: 0;
+  width: 1.75rem;
+  transform: rotate(35deg);
+}
+
+#icon_cactus2 {
+  position: absolute;
+  bottom: -7px;
+  right: 5px;
+  width: 3rem;
+}
+
+#icon_lettuce {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+  width: 2rem;
+}
+
+#icon_cauliflower {
+  position: absolute;
+  bottom: -35%;
+  right: -15%;
+  width: 2.5rem;
+}
+
+#icon_cauliflower2 {
+  position: absolute;
+  bottom: -35%;
+  right: -10%;
+  width: 2.5rem;
+}
+
+#icon_cucumber {
+  position: absolute;
+  right: -1.25rem;
+  bottom: 1px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#icon_cactus3 {
+  position: absolute;
+  bottom: -6px;
+  right: 5px;
+  width: 3rem;
+}
+
+#icon_pepper {
+  position: absolute;
+  right: -30%;
+  bottom: 8px;
+  width: 2.5rem;
+}
+
+#icon_plum {
+  position: absolute;
+  right: -20px;
+  bottom: 5px;
+  width: 3rem;
+  transform: rotate(15deg);
+}
+
+#icon_jam {
+  position: absolute;
+  right: -20%;
+  bottom: 8px;
+  width: 2.5rem;
+}
+
 .navbar {
-  padding: 0 1rem !important;
+  padding: 0 1.5rem 0 1rem !important;
 }
 .navbar-light {
   background-color: #3bccaa !important;
@@ -81,6 +201,7 @@ p {
   align-items: center;
   padding-right: 0.75rem;
   height: 2.25rem;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .navbar__search {
@@ -119,6 +240,7 @@ p {
   height: 2.25rem;
   cursor: pointer;
   margin: 0.5rem 0;
+  position: relative;
 }
 .navbar__login:hover {
   background-color: #333333;
@@ -156,7 +278,7 @@ p {
 }
 
 #navbar-addRecipe.navbar {
-  padding: 0 1rem !important;
+  padding: 0 1.5rem 0 1rem !important;
 }
 #navbar-addRecipe.navbar-light {
   background-color: #f48574 !important;
@@ -178,6 +300,7 @@ p {
   align-items: center;
   padding-right: 0.75rem;
   height: 2.25rem;
+  position: relative;
 }
 @media (min-width: 1200px) {
   #navbar-addRecipe.navbar .navbar__search {
@@ -211,6 +334,7 @@ p {
   height: 2.25rem;
   cursor: pointer;
   margin: 0.5rem 0;
+  position: relative;
 }
 #navbar-addRecipe.navbar .navbar__login:hover {
   background-color: #333333;
@@ -449,10 +573,12 @@ p {
   margin: 1.5rem 0.5rem;
   width: inherit;
   min-width: 275px;
+  position: relative;
 }
 .filters__heading {
   color: #3bccaa;
   text-align: center;
+  position: relative;
 }
 .filters__heading hr {
   margin-top: 0.5rem;
@@ -672,6 +798,7 @@ p {
 }
 .addRecipe__content .content__heading {
   margin-bottom: 1rem;
+  position: relative;
 }
 .addRecipe__content .content__heading .vertical-separator {
   width: 0;
@@ -688,6 +815,7 @@ p {
   padding: 1rem;
   border-radius: 1rem;
   min-height: 75vh;
+  position: relative;
 }
 @media (max-width: 576px) {
   .addRecipe .summary-container {
@@ -818,6 +946,11 @@ body.log {
   color: #333333;
   border-bottom: solid #3bccaa 0.25rem;
 }
+@media (max-width: 576px) {
+  .categories ul {
+    margin-left: -30px;
+  }
+}
 
 .recipe-preview-container {
   padding: 0 0 0 10rem;
@@ -939,6 +1072,7 @@ body.log {
   border: solid #3bccaa 4px;
   border-radius: 0.75rem;
   background-color: white;
+  position: relative;
 }
 .recipeDetails .content__ingredients__heading {
   display: flex;
@@ -1034,6 +1168,9 @@ body.log {
 .recipeDetails .content__instructions__steps h5 {
   font-weight: 900;
   margin-bottom: 5px;
+}
+.recipeDetails .content__instructions__steps span {
+  position: relative;
 }
 .recipeDetails .content__comments {
   margin: 1.5rem 1rem;

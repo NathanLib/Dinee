@@ -30,6 +30,10 @@
                 border-bottom: solid $colour-primary 0.25rem;
             }
         }
+
+        @media (max-width: 576px) {
+            margin-left: -30px;
+        }
     }
 }
 

@@ -125,12 +125,14 @@ $(document).ready(function () {
             $(".filters__price, .filters__time, .filters__difficulty, .filters__type, .filters__specificities, .filters__search").css("display", "block");
             $(".filters--open").css({ "display": "none" });
             $(".filters--close").css({ "display": "block" });
+            $("#icon_cactus").css({ "display": "block" });
         });
 
         $(".filters--close").click(function () {
             $(".filters__price, .filters__time, .filters__difficulty, .filters__type, .filters__specificities, .filters__search").css("display", "none");
             $(".filters--open").css({ "display": "block" });
             $(".filters--close").css({ "display": "none" });
+            $("#icon_cactus").css({ "display": "none" });
         });
     }
 
@@ -180,4 +182,6 @@ $(document).ready(function () {
         $("#save span").css('color', "#b30000");
         $("#save h6 #save__text").text("Saved!");
     })
+
+    // ********************************
 });
